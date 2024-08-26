@@ -20,7 +20,7 @@ const App: React.FC = () => {
     (async () => {
       const {status} = await ImagePicker.requestMediaLibraryPermissionsAsync();
       if(status !== 'granted'){
-        alert('Sorry, we need camera roll permissions to make this!');
+        alert('Error, need permissions for camera');
 
       }
     })();
